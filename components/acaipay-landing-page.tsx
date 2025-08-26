@@ -22,6 +22,7 @@ import {
   ArrowRight,
   Menu,
   SquareArrowOutUpRight,
+  Instagram,
 } from "lucide-react";
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "./ui/sheet";
@@ -135,17 +136,23 @@ export default function AcaiPayLandingPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Button
+                  asChild
                   size="lg"
                   className="text-white hover:bg-primary-700 bg-primary-600 shadow-xl px-8 py-3"
                 >
-                  Começar agora <ArrowRight className="ml-2 h-5 w-5" />
+                  <a href="https://wa.me/5591989027511" target="_blank">
+                    Começar agora <ArrowRight className="ml-2 h-5 w-5" />
+                  </a>
                 </Button>
                 <Button
+                  asChild
                   variant="outline"
                   size="lg"
-                  className="border-primary-200 text-primary-700 hover:bg-primary-50 px-8 py-3 bg-transparent"
+                  className="border-primary-200 text-primary-700 hover:bg-primary-50 hover:text-primary-700 px-8 py-3 bg-transparent"
                 >
-                  Ver demonstração
+                  <a href="https://wa.me/5591989027511" target="_blank">
+                    Ver demonstração
+                  </a>
                 </Button>
               </div>
               <p className="text-xs text-gray-500 mt-2">
@@ -743,15 +750,13 @@ export default function AcaiPayLandingPage() {
                 Simples, seguro e transparente.
               </p>
               <div className="flex space-x-4">
-                <div className="w-10 h-10 bg-primary-600 rounded-full flex items-center justify-center hover:bg-primary-500 transition-colors cursor-pointer">
-                  <span className="text-white text-sm font-bold">f</span>
-                </div>
-                <div className="w-10 h-10 bg-primary-600 rounded-full flex items-center justify-center hover:bg-primary-500 transition-colors cursor-pointer">
-                  <span className="text-white text-sm font-bold">t</span>
-                </div>
-                <div className="w-10 h-10 bg-primary-600 rounded-full flex items-center justify-center hover:bg-primary-500 transition-colors cursor-pointer">
-                  <span className="text-white text-sm font-bold">in</span>
-                </div>
+                <a
+                  href="https://www.instagram.com/acaipay/"
+                  target="_blank"
+                  className="w-10 h-10 bg-primary-600 rounded-full flex items-center justify-center hover:bg-primary-500 transition-colors cursor-pointer"
+                >
+                  <Instagram className="text-white" />
+                </a>
               </div>
             </div>
 
@@ -775,35 +780,11 @@ export default function AcaiPayLandingPage() {
                     Preços
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-gray-300 hover:text-primary-400 transition-colors"
-                  >
-                    API
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-gray-300 hover:text-primary-400 transition-colors"
-                  >
-                    Documentação
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-gray-300 hover:text-primary-400 transition-colors"
-                  >
-                    Sandbox
-                  </Link>
-                </li>
               </ul>
             </div>
 
             {/* Company Links */}
-            <div>
+            {/* <div>
               <h3 className="text-white font-semibold mb-4">Empresa</h3>
               <ul className="space-y-2 text-sm">
                 <li>
@@ -847,44 +828,12 @@ export default function AcaiPayLandingPage() {
                   </Link>
                 </li>
               </ul>
-            </div>
+            </div> */}
 
             {/* Support Links */}
             <div>
               <h3 className="text-white font-semibold mb-4">Suporte</h3>
               <ul className="space-y-2 text-sm">
-                <li>
-                  <Link
-                    href="#"
-                    className="text-gray-300 hover:text-primary-400 transition-colors"
-                  >
-                    Central de ajuda
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-gray-300 hover:text-primary-400 transition-colors"
-                  >
-                    Contato
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-gray-300 hover:text-primary-400 transition-colors"
-                  >
-                    Status
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-gray-300 hover:text-primary-400 transition-colors"
-                  >
-                    Segurança
-                  </Link>
-                </li>
                 <li>
                   <Link
                     href="#faq"
@@ -898,7 +847,7 @@ export default function AcaiPayLandingPage() {
           </div>
 
           {/* Newsletter Signup */}
-          <div className="border-t border-gray-700 pt-8 mb-8">
+          {/* <div className="border-t border-gray-700 pt-8 mb-8">
             <div className="max-w-md">
               <h3 className="text-white font-semibold mb-2">
                 Fique por dentro
@@ -917,7 +866,7 @@ export default function AcaiPayLandingPage() {
                 </Button>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Bottom Bar */}
           <div className="border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
