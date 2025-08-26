@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@theme inline {
-  --font-sans: var(--font-dm-sans);
-  --font-serif: var(--font-space-grotesk);
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
